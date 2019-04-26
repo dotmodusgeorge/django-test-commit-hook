@@ -1,6 +1,6 @@
 repos:
 -   repo: https://github.com/dotmodusgeorge/django-test-commit-hook
-    rev: v0.0.8
+    rev: v0.0.2
     hooks:
     - id: django-commit-tester
       language_version: python3
