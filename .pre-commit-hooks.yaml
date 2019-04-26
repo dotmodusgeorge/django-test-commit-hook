@@ -1,0 +1,9 @@
+-   id: django-commit-tester
+    name: Django Commit Tester
+    description: Run django unit tests on commit
+    entry: django-commit-tester
+    language: python
+    types: [python]
+    # for backward compatibility
+    files: ''
+    minimum_pre_commit_version: 0.15.0
