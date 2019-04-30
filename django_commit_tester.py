@@ -33,18 +33,19 @@ def main(argv=None):
         if not os.path.exists(args.testdir):
             return F'Test directory path does not exist. Given directory: {args.testdir}'
         if not os.path.exists(args.managedir):
-            return F'manage.py directory path does not exist. Given directory: ' + 
-            args.managedir
+            return F'manage.py directory path does not exist. Given directory: ' + \
+                args.managedir
         if not os.path.exists(args.requirements):
-            return F'Requirements directory path does not exist. Given directory: ' +
-            args.requirements
+            return F'Requirements directory path does not exist. Given directory: ' + \
+                args.requirements
 
         # Check that virtualenv dir exists
         if not os.path.exists(VENV_DIR):
             return_code = create_venv_dir()
             if return_code != 0:
-                return 'Could not create pre-commit virtual environment. Please ensure you have' + \
-                    'virtualenv installed and available. Install with: "pip install virtualenv"'
+                return 'Could not create pre-commit virtual environment. ' + \
+                    'Please ensure you have virtualenv installed and available. ' + \
+                    'Install with: "pip install virtualenv"'
 
         # Parse Directories from args
         test_directory = args.testdir
