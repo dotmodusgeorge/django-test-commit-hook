@@ -15,7 +15,7 @@ Add the following to your .pre-commit-config.yaml file:
 
 ```yaml
 - repo: https://github.com/dotmodusgeorge/django-test-commit-hook
-  rev: v0.0.2
+  rev: v0.0.3
   hooks:
     - id: django-commit-tester
       args:
