@@ -2,7 +2,7 @@
 
 ## Config
 
-**IMPORT**
+**IMPORTANT**
 
 This pre-commit hook creates a virtualenv named PRE_COMMIT_VENV. Ensure that your *.gitignore* has been updated to ignore this directory. For example:
 
