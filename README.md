@@ -2,11 +2,20 @@
 
 ## Config
 
+**IMPORT**
+
+This pre-commit hook creates a virtualenv named PRE_COMMIT_VENV. Ensure that your *.gitignore* has been updated to ignore this directory. For example:
+
+```
+# Ignore django-test-commit-hook virtualenv
+PRE_COMMIT_ENV
+```
+
 Add the following to your .pre-commit-config.yaml file:
 
 ```yaml
 - repo: https://github.com/dotmodusgeorge/django-test-commit-hook
-  rev: v0.0.1
+  rev: v0.0.2
   hooks:
     - id: django-commit-tester
       args:
