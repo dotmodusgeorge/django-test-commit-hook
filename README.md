@@ -25,6 +25,14 @@ Add the following to your .pre-commit-config.yaml file:
       language_version: python3
 ```
 
+The three arguments are required and allude to:
+
+**testdir** - The directory where the unit tests are stored
+
+**managedir** - The directory containing the manage.py file for the Django project
+
+**requirements** - Relative path to the file containing the PIP packages to be installed
+
 To streamline the process, you can create a virtual env named PRE_COMMIT_VENV in the same directory as the pre-commit-config.yaml file. 
 
 ```bash
