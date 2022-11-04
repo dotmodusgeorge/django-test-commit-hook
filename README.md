@@ -23,6 +23,7 @@ Add the following to your .pre-commit-config.yaml file:
       - --managedir=myproj
       - --requirements=proj/requirements.txt
       language_version: python3
+      pass_filenames: false
 ```
 
 The three arguments are required and allude to:
